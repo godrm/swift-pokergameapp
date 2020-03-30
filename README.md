@@ -1,2 +1,6 @@
 # swift-pokergameapp
-STEP15 포커게임 앱 저장소
+
+## MVC 초기 작업 
+
+![diagram](https://github.com/godrm/swift-pokergameapp/blob/master/diagram-step1.png?raw=true)
+
