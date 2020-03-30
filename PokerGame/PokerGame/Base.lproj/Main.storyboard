@@ -40,11 +40,43 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="playerPanel" destination="2D4-pb-tnu" id="gzC-Pg-7ei"/>
                         <outlet property="playerSegment" destination="35P-yY-mDL" id="oUY-Js-nFX"/>
                         <outlet property="playerStack" destination="6MN-Om-whK" id="7M9-jC-RZ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="2D4-pb-tnu" customClass="PlayerView" customModule="PokerGame" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyI-2y-qSE">
+                            <rect key="frame" x="16" y="15" width="208" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRi-bn-5Hn">
+                            <rect key="frame" x="16" y="44" width="170" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="🥇" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxB-1j-jZc">
+                            <rect key="frame" x="194" y="44" width="45" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <viewLayoutGuide key="safeArea" id="CRy-eO-TvH"/>
+                    <connections>
+                        <outlet property="cardStack" destination="cRi-bn-5Hn" id="H4A-KB-qCE"/>
+                        <outlet property="nameLabel" destination="FyI-2y-qSE" id="dRN-po-4u7"/>
+                        <outlet property="winnerMedal" destination="nxB-1j-jZc" id="6TB-l0-DDB"/>
+                    </connections>
+                </view>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="131.91964285714286"/>
         </scene>

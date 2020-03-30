@@ -14,6 +14,9 @@
 		8347BB6F243193E90027712F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8347BB6E243193E90027712F /* Assets.xcassets */; };
 		8347BB72243193E90027712F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8347BB70243193E90027712F /* LaunchScreen.storyboard */; };
 		8347BB7D243193E90027712F /* PokerGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB7C243193E90027712F /* PokerGameTests.swift */; };
+		8347BB882431980A0027712F /* PokerGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB872431980A0027712F /* PokerGame.swift */; };
+		8347BB8A243198860027712F /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB89243198860027712F /* Players.swift */; };
+		8347BB8C2431A1E50027712F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB8B2431A1E50027712F /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		8347BB78243193E90027712F /* PokerGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8347BB7C243193E90027712F /* PokerGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerGameTests.swift; sourceTree = "<group>"; };
 		8347BB7E243193E90027712F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8347BB872431980A0027712F /* PokerGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerGame.swift; sourceTree = "<group>"; };
+		8347BB89243198860027712F /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		8347BB8B2431A1E50027712F /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 				8347BB65243193E50027712F /* AppDelegate.swift */,
 				8347BB67243193E50027712F /* SceneDelegate.swift */,
 				8347BB69243193E50027712F /* ViewController.swift */,
+				8347BB872431980A0027712F /* PokerGame.swift */,
+				8347BB89243198860027712F /* Players.swift */,
+				8347BB8B2431A1E50027712F /* PlayerView.swift */,
 				8347BB6B243193E50027712F /* Main.storyboard */,
 				8347BB6E243193E90027712F /* Assets.xcassets */,
 				8347BB70243193E90027712F /* LaunchScreen.storyboard */,
@@ -201,6 +210,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8347BB6A243193E50027712F /* ViewController.swift in Sources */,
+				8347BB8A243198860027712F /* Players.swift in Sources */,
+				8347BB882431980A0027712F /* PokerGame.swift in Sources */,
+				8347BB8C2431A1E50027712F /* PlayerView.swift in Sources */,
 				8347BB66243193E50027712F /* AppDelegate.swift in Sources */,
 				8347BB68243193E50027712F /* SceneDelegate.swift in Sources */,
 			);
