@@ -9,10 +9,15 @@
 import Foundation
 
 class PokerGame {
-    private var players : Players
+    enum Notification {
+        static let DidChangePlayers = Foundation.Notification.Name("DidChangePlayers")
+    }
+    
+    private var players : Players 
     
     init(with numberOfPlayers: Int) {
         players = Players(with: numberOfPlayers)
+        NotificationCenter.default.post(name: Notification.DidChangePlayers, object: self)
     }
     
     func iteratePlayerName(with handler: (String)->()) {

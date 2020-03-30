@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
     //MARK:- IBOutlet
@@ -16,30 +17,37 @@ class ViewController: UIViewController {
     
     //MARK:- internal property
     private var game : PokerGame!
+    private var gamePublisher : AnyCancellable!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureDelegate()
-        resetGame()
+        configureSubscriber()
+        configureGame()
     }
     
     private func configureDelegate() {
         playerSegment.addTarget(self, action: #selector(playerChanged), for: .valueChanged)
     }
     
-    private func resetGame() {
-        configureGame()
-        configureGameView()
-    }
-    
     @objc func playerChanged(_ sender: UISegmentedControl) {
-        resetGame()
+        configureGame()
     }
 
     private func configureGame() {
         let selectedIndex = playerSegment.selectedSegmentIndex
         self.game = PokerGame(with: selectedIndex + 3)
+    }
+    
+    private func configureSubscriber() {
+        gamePublisher = NotificationCenter.default
+                .publisher(for: PokerGame.Notification.DidChangePlayers)
+                .sink { notification in
+                    DispatchQueue.main.async {
+                        self.configureGameView()
+                    }
+                }
     }
     
     private func configureGameView() {
@@ -60,7 +68,5 @@ class ViewController: UIViewController {
         view.winnerMedal.isHidden = true
         return view
     }
-
-    
 }
 
