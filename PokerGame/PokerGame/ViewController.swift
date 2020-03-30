@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     //MARK:- IBOutlet
     @IBOutlet weak var playerSegment: UISegmentedControl!
     @IBOutlet weak var playerStack: UIStackView!
-    @IBOutlet var playerPanel: PlayerView!
     
     //MARK:- internal property
     private var game : PokerGame!
@@ -62,7 +61,7 @@ class ViewController: UIViewController {
     }
     
     private func makePlayerView(with name: String) -> PlayerView {
-        let view = try! NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(NSKeyedArchiver.archivedData(withRootObject: playerPanel!, requiringSecureCoding: false)) as! PlayerView
+        let view = Bundle.main.loadNibNamed("PlayerView", owner: self, options: nil)?.first as! PlayerView
 
         view.nameLabel.text = name
         view.winnerMedal.isHidden = true

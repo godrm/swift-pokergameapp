@@ -17,6 +17,7 @@
 		8347BB882431980A0027712F /* PokerGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB872431980A0027712F /* PokerGame.swift */; };
 		8347BB8A243198860027712F /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB89243198860027712F /* Players.swift */; };
 		8347BB8C2431A1E50027712F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB8B2431A1E50027712F /* PlayerView.swift */; };
+		8347BB8E2431DF450027712F /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8347BB8D2431DF450027712F /* PlayerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		8347BB872431980A0027712F /* PokerGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerGame.swift; sourceTree = "<group>"; };
 		8347BB89243198860027712F /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 		8347BB8B2431A1E50027712F /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		8347BB8D2431DF450027712F /* PlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				8347BB872431980A0027712F /* PokerGame.swift */,
 				8347BB89243198860027712F /* Players.swift */,
 				8347BB8B2431A1E50027712F /* PlayerView.swift */,
+				8347BB8D2431DF450027712F /* PlayerView.xib */,
 				8347BB6B243193E50027712F /* Main.storyboard */,
 				8347BB6E243193E90027712F /* Assets.xcassets */,
 				8347BB70243193E90027712F /* LaunchScreen.storyboard */,
@@ -192,6 +195,7 @@
 				8347BB72243193E90027712F /* LaunchScreen.storyboard in Resources */,
 				8347BB6F243193E90027712F /* Assets.xcassets in Resources */,
 				8347BB6D243193E50027712F /* Main.storyboard in Resources */,
+				8347BB8E2431DF450027712F /* PlayerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

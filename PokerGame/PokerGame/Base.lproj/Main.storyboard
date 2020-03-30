@@ -40,7 +40,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="playerPanel" destination="2D4-pb-tnu" id="gzC-Pg-7ei"/>
                         <outlet property="playerSegment" destination="35P-yY-mDL" id="oUY-Js-nFX"/>
                         <outlet property="playerStack" destination="6MN-Om-whK" id="7M9-jC-RZ5"/>
                     </connections>
