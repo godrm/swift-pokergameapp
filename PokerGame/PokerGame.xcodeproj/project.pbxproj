@@ -18,6 +18,8 @@
 		8347BB8A243198860027712F /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB89243198860027712F /* Players.swift */; };
 		8347BB8C2431A1E50027712F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB8B2431A1E50027712F /* PlayerView.swift */; };
 		8347BB8E2431DF450027712F /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8347BB8D2431DF450027712F /* PlayerView.xib */; };
+		8347BB902431E97C0027712F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB8F2431E97C0027712F /* NetworkManager.swift */; };
+		8347BB922431EC2A0027712F /* GameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347BB912431EC2A0027712F /* GameUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		8347BB89243198860027712F /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 		8347BB8B2431A1E50027712F /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		8347BB8D2431DF450027712F /* PlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
+		8347BB8F2431E97C0027712F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8347BB912431EC2A0027712F /* GameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				8347BB65243193E50027712F /* AppDelegate.swift */,
 				8347BB67243193E50027712F /* SceneDelegate.swift */,
 				8347BB69243193E50027712F /* ViewController.swift */,
+				8347BB8F2431E97C0027712F /* NetworkManager.swift */,
+				8347BB912431EC2A0027712F /* GameUseCase.swift */,
 				8347BB872431980A0027712F /* PokerGame.swift */,
 				8347BB89243198860027712F /* Players.swift */,
 				8347BB8B2431A1E50027712F /* PlayerView.swift */,
@@ -216,9 +222,11 @@
 				8347BB6A243193E50027712F /* ViewController.swift in Sources */,
 				8347BB8A243198860027712F /* Players.swift in Sources */,
 				8347BB882431980A0027712F /* PokerGame.swift in Sources */,
+				8347BB902431E97C0027712F /* NetworkManager.swift in Sources */,
 				8347BB8C2431A1E50027712F /* PlayerView.swift in Sources */,
 				8347BB66243193E50027712F /* AppDelegate.swift in Sources */,
 				8347BB68243193E50027712F /* SceneDelegate.swift in Sources */,
+				8347BB922431EC2A0027712F /* GameUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

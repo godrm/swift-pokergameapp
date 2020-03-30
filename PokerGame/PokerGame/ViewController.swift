@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerStack: UIStackView!
     
     //MARK:- internal property
-    private var game : PokerGame!
+    private var game : GamePlayerDataSource!
     private var gamePublisher : AnyCancellable!
     
     override func viewDidLoad() {
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         configureDelegate()
         configureSubscriber()
-        configureGame()
+        configureUsecase()
     }
     
     private func configureDelegate() {
@@ -32,6 +32,12 @@ class ViewController: UIViewController {
     
     @objc func playerChanged(_ sender: UISegmentedControl) {
         configureGame()
+    }
+    
+    private func configureUsecase() {
+        GameUseCase.makeGame(with: MockNetworkSuccessStub()) { (gameDataSoure) in
+            self.game = gameDataSoure
+        }
     }
 
     private func configureGame() {

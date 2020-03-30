@@ -8,15 +8,22 @@
 
 import Foundation
 
-struct Player {
+struct Player : Codable {
     var name : String
 }
 
 class Players {
     private var players = [Player]()
+    
     init(with count: Int) {
         (0..<count).forEach { index in
             players.append(Player(name: "Player\(index)"))
+        }
+    }
+    
+    init(with names: [String]) {
+        names.forEach { name in
+            players.append(Player(name: name))
         }
     }
     
